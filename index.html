@@ -36,6 +36,18 @@
   table { border-collapse:collapse; width:100%; margin-top:24px; }
   th, td { text-align:left; padding:12px; border-bottom:1px solid var(--line); vertical-align:top; }
   th { width:9em; background:var(--bg); font-weight:700; white-space:nowrap; }
+  .fk-head { display:flex; align-items:center; gap:24px; flex-wrap:wrap; margin-top:20px; }
+  .fk-head img { height:56px; width:auto; max-width:100%; }
+  .fk-lead { font-size:20px; font-weight:700; line-height:1.6; margin:20px 0 8px; }
+  .fk-list { list-style:none; padding:0; margin:24px 0 0; display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+  .fk-list li { border-left:4px solid #3F6F8F; background:var(--bg); padding:14px 16px; border-radius:0 8px 8px 0; }
+  .fk-list b { display:block; font-size:17px; margin-bottom:2px; }
+  .fk-list span { color:var(--sub); font-size:15px; }
+  .fk-price { margin-top:28px; border:1px solid var(--line); border-radius:8px; padding:20px; }
+  .fk-price p { margin:0 0 6px; }
+  .fk-price .camp { display:inline-block; background:#b8321f; color:#fff; font-weight:700; font-size:14px; padding:2px 10px; border-radius:6px; margin-bottom:8px; }
+  .btn { display:inline-block; margin-top:14px; background:var(--key); color:#fff; font-weight:700; padding:12px 22px; border-radius:8px; text-decoration:none; }
+  .btn:hover { background:var(--key-dark); color:#fff; }
   .en-sec { background:var(--bg); }
   footer { padding:28px 0; font-size:14px; color:var(--sub); }
   @media (max-width:600px) { nav a { margin-left:0; margin-right:14px; } .hero { padding:48px 0; } th { width:auto; white-space:nowrap; padding:12px 10px; font-size:14px; } td { padding:12px 10px; } }
@@ -44,7 +56,7 @@
 <body>
 <header><div class="wrap">
   <a class="logo" href="./"><img src="favicon.png" alt="">合同会社鈴木医工</a>
-  <nav><a href="#business">事業内容</a><a href="#products">製品</a><a href="#company">会社概要</a><a href="#en" lang="en">English</a></nav>
+  <nav><a href="#business">事業内容</a><a href="#products">製品</a><a href="#fastkarte">ファストカルテ</a><a href="#company">会社概要</a><a href="#en" lang="en">English</a></nav>
 </div></header>
 
 <div class="hero"><div class="wrap">
@@ -65,9 +77,30 @@
 <section id="products"><div class="wrap">
   <h2><small>PRODUCTS</small>製品</h2>
   <div class="grid">
-    <div class="card"><span class="tag">運用中</span><h3>ファストカルテ</h3><p>美容クリニック向けの電子カルテ。予約の取り込み、受付、カルテ記載、同意書、会計、オンライン診療までを1つにまとめ、2026年9月から美容クリニックで本番運用しています。</p></div>
+    <div class="card"><span class="tag">運用中</span><h3>ファストカルテ</h3><p>美容クリニック向けの電子カルテ。予約の取り込み、受付、カルテ記載、同意書、会計、オンライン診療までを1つにまとめ、2026年9月から美容クリニックで本番運用しています。 <a href="#fastkarte">詳しく見る</a></p></div>
     <div class="card"><span class="tag">運用中</span><h3>クリニックスタッフ管理</h3><p>シフト作成、勤務実績、報酬計算、支払通知までをまとめた、クリニック向けのスタッフ管理システムです。</p></div>
     <div class="card"><span class="tag">開発中</span><h3>他院向け提供</h3><p>自院での運用で磨いた仕組みを、ほかのクリニックにも提供できるよう準備しています。</p></div>
+  </div>
+</div></section>
+
+<section id="fastkarte"><div class="wrap">
+  <h2><small>FASTKARTE</small>主力製品のご紹介</h2>
+  <div class="fk-head"><img src="fastkarte-logo.svg" alt="ファストカルテ"></div>
+  <p class="fk-lead">机の上ではなく、現場で鍛えた<br>美容クリニック向けの電子カルテです。</p>
+  <p>朝の受付、混み合う午後、閉院後の締め。スタッフの手が止まったところを、院長でもある医師がその場で見て、直してきました。2026年9月から美容クリニックで毎日使われています。</p>
+  <ul class="fk-list">
+    <li><b>予約サイトの二重管理をなくす</b><span>ホットペッパー・キレイパス・トリビューの予約を自動で取り込み、埋まった枠はほかのサイトでも閉じます。24時間Web予約も同じ台帳に入ります。</span></li>
+    <li><b>番号札で、患者が迷わない</b><span>番号札の印刷、待合のモニターと音声での案内、スマホへの呼び出し。名前を呼ばずにご案内できます。</span></li>
+    <li><b>同意書と見積書をその場で</b><span>タブレットで電子署名。見積書は3通り並べて提示し、特商法の書面やクーリングオフの期限も自動で出します。</span></li>
+    <li><b>読みで探せる定型文</b><span>「だつもう」と打てば脱毛のテンプレートが出ます。部位などはタップで選べます。</span></li>
+    <li><b>本番の前に、練習用の院</b><span>毎日架空の患者が来る練習環境で、新人が受付から会計まで練習できます。</span></li>
+    <li><b>院のスタッフに合わせて直す</b><span>開発者が院の使い方を見て、画面や流れを調整します。導入時の1週間はどのプランでもカスタマイズ無料です。</span></li>
+  </ul>
+  <div class="fk-price">
+    <span class="camp">期間限定・先着5院 月額半額</span>
+    <p><b>月額 19,800円から</b>（ライト／スタンダード／ホームページ付き／経営プラスの4プラン、税抜）</p>
+    <p>先着5院は、利用開始から12か月間の月額が半額になります（導入費は対象外）。番号札・予約の取り込みなど、いまのカルテのままでの部分導入もご相談いただけます。</p>
+    <a class="btn" href="mailto:info@suzuki-medical-engineering.work?subject=%E3%83%95%E3%82%A1%E3%82%B9%E3%83%88%E3%82%AB%E3%83%AB%E3%83%86%E3%81%AE%E3%81%94%E7%9B%B8%E8%AB%87">導入の相談をする（メール）</a>
   </div>
 </div></section>
 
