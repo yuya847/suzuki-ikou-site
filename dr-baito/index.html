@@ -44,7 +44,8 @@
   <h2>できること</h2>
   <ul>
     <li>複数の求人サイトに掲載されているスポット勤務の求人を、まとめて一覧で見られます。</li>
-    <li>あなたのGoogleカレンダーを<b>読み取り</b>、予定の入っていない時間帯を判定します。</li>
+    <li>あなたのGoogleカレンダーを読み取り、予定の入っていない時間帯を判定します。</li>
+    <li>「この勤務を予定に入れて」と頼むと、内容を確認したうえでカレンダーに追加します。</li>
     <li>空き時間と、あなたが設定した条件（報酬・場所・業務内容など）に合う求人が出たら、LINEでお知らせします。</li>
     <li>希望の条件は「土曜の午前、横浜あたりで時給1.2万円以上」のように、ふつうの言葉で設定できます。</li>
   </ul>
@@ -52,8 +53,9 @@
 <section>
   <h2>Googleカレンダーの扱い</h2>
   <ul>
-    <li>使う権限は<b>カレンダーの読み取りのみ</b>（<code>calendar.readonly</code>）です。予定の作成・変更・削除は一切しません。</li>
-    <li>カレンダーの情報は、空き時間の判定にだけ使います。広告には使わず、第三者に販売・提供しません。</li>
+    <li>使う権限は、カレンダーの読み取り（<code>calendar.readonly</code>）と予定の追加（<code>calendar.events</code>）です。</li>
+    <li>予定を書き込むのは、<b>あなたが内容を確認して「追加する」を押したときだけ</b>です。自動で書き込んだり、既存の予定を変更・削除したりはしません。</li>
+    <li>カレンダーの情報は、空き時間の判定と、あなたが依頼した予定の追加にだけ使います。広告には使わず、第三者に販売・提供しません。</li>
     <li>連携はいつでも解除できます（<a href="https://myaccount.google.com/permissions">Googleアカウントの「サードパーティ製のアプリとサービス」</a>から）。</li>
   </ul>
   <p>詳しくは<a href="privacy.html">プライバシーポリシー</a>をご覧ください。</p>
@@ -64,7 +66,7 @@
 </section>
 <section class="en" lang="en">
   <h2>About (English)</h2>
-  <p>Dr. Baito Bot notifies physicians via LINE of spot-shift job listings that fit the free time in their Google Calendar. It requests read-only access to Google Calendar (<code>calendar.readonly</code>) and uses that data solely to determine free time slots. It never creates, modifies or deletes events. See our <a href="privacy.html">Privacy Policy</a>.</p>
+  <p>Dr. Baito Bot notifies physicians via LINE of spot-shift job listings that fit the free time in their Google Calendar. It requests access to read Google Calendar (<code>calendar.readonly</code>) and to add events (<code>calendar.events</code>). Calendar data is used solely to determine free time slots. An event is created only after the user reviews it and taps “Add”; existing events are never modified or deleted. See our <a href="privacy.html">Privacy Policy</a>.</p>
 </section>
 <section>
   <h2>運営者</h2>
