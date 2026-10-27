@@ -53,6 +53,14 @@
   .btn-line { background:#fff; color:var(--key); border:2px solid var(--key); padding:10px 20px; margin-left:8px; }
   .btn-line:hover { background:var(--key-50); color:var(--key-dark); }
   @media (max-width:480px) { .btn-line { margin-left:0; } }
+  .imp-note { display:inline-block; font-size:14px; font-weight:700; color:#8a2a1a; border:1.5px solid #8a2a1a; border-radius:6px; padding:2px 10px; margin-top:12px; }
+  .steps { counter-reset:st; list-style:none; padding:0; margin:24px 0 0; display:grid; gap:12px; }
+  .steps li { counter-increment:st; position:relative; padding:14px 16px 14px 56px; background:var(--bg); border-radius:8px; }
+  .steps li::before { content:counter(st); position:absolute; left:16px; top:14px; width:28px; height:28px; border-radius:50%; background:var(--key); color:#fff; font-weight:700; display:grid; place-items:center; font-size:15px; }
+  .steps b { display:block; }
+  .steps span { color:var(--sub); font-size:15px; }
+  .rule { margin-top:24px; border:1px solid var(--line); border-radius:8px; padding:16px 20px; }
+  .rule ul { margin:8px 0 0; padding-left:1.2em; color:var(--sub); font-size:15px; }
   .en-sec { background:var(--bg); }
   footer { padding:28px 0; font-size:14px; color:var(--sub); }
   @media (max-width:600px) { nav a { margin-left:0; margin-right:14px; } .hero { padding:48px 0; } th { width:auto; white-space:nowrap; padding:12px 10px; font-size:14px; } td { padding:12px 10px; } }
@@ -61,7 +69,7 @@
 <body>
 <header><div class="wrap">
   <a class="logo" href="./"><img src="logo-mark.svg" alt="">合同会社鈴木医工</a>
-  <nav><a href="#business">事業内容</a><a href="#products">製品</a><a href="#fastkarte">ファストカルテ</a><a href="#company">会社概要</a><a href="#en" lang="en">English</a></nav>
+  <nav><a href="#business">事業内容</a><a href="#products">製品</a><a href="#fastkarte">ファストカルテ</a><a href="#import">輸入手続の支援</a><a href="#company">会社概要</a><a href="#en" lang="en">English</a></nav>
 </div></header>
 
 <div class="hero"><div class="wrap">
@@ -75,6 +83,7 @@
   <div class="grid">
     <div class="card"><h3>医療機関向けシステム開発</h3><p>電子カルテ・予約・受付・会計など、クリニックの業務システムを開発し、運用・保守まで行います。</p></div>
     <div class="card"><h3>クリニックの業務改善・DX支援</h3><p>紙と手作業の多い業務を見直し、現場の流れに合わせてデジタル化を支援します。</p></div>
+    <div class="card"><span class="tag">準備中</span><h3>医師向け 輸入手続の支援</h3><p>医師がご自身の患者の治療に使う医薬品・医療機器を輸入するときの、厚生労働省「輸入確認」の手続と、海外の製造元との連絡を支援します。医療関係者の方のみが対象です。 <a href="#import">詳しく見る</a></p></div>
     <div class="card"><h3>AIを活用した開発</h3><p>Anthropic の Claude を開発工程に全面的に取り入れ、医師1人でも素早く、品質を保って作り込める体制で開発しています。</p></div>
   </div>
 </div></section>
@@ -110,6 +119,28 @@
   </div>
 </div></section>
 
+<section id="import"><div class="wrap">
+  <h2><small>IMPORT SUPPORT</small>医師向け 輸入手続の支援</h2>
+  <span class="imp-note">医療関係者の方へ／準備中</span>
+  <p style="margin-top:16px">治療上必要で、国内では手に入らない医薬品・医療機器を、医師がご自身の患者に使うために輸入する場合があります。このとき医師ご本人の名義で、厚生労働省の「輸入確認」の手続が必要です。鈴木医工は、この手続と、海外の製造元・輸出業者とのやりとりを、医師に代わって進める準備をしています。</p>
+  <ol class="steps">
+    <li><b>ご相談</b><span>使う目的と、国内に代わりのものがないかを、医師と一緒に確認します。</span></li>
+    <li><b>海外の製造元・輸出業者との連絡</b><span>見積もり、仕入書（インボイス）など、輸入確認に必要な書類の準備を進めます。</span></li>
+    <li><b>輸入確認の申請</b><span>医師ご本人の名義で申請します。内容は提出前に医師ご本人に確認していただきます（委任状にもとづく手続の代行）。</span></li>
+    <li><b>医療機関への直送</b><span>品物は、海外から医療機関へ直接届きます。</span></li>
+  </ol>
+  <div class="rule"><b>この手続で守ること</b>
+    <ul>
+      <li>輸入するのは医師ご本人です。鈴木医工は手続を代わりに進める立場で、医薬品等の販売は行いません。</li>
+      <li>鈴木医工は在庫を持たず、品物を受け取りません。</li>
+      <li>輸入確認の対象は、治療上必要で、国内に同じものが流通していない医薬品等に限られます。価格が安いことは、輸入の理由になりません。</li>
+      <li>このページでは、個別の製品名・価格・効能は紹介しません。</li>
+    </ul>
+  </div>
+  <p style="margin-top:20px;color:var(--sub);font-size:15px">現在、関係機関への確認と提携先との調整を進めています。開始時期を含め、医療機関・医師の方からのお問い合わせはメールで承ります。</p>
+  <a class="btn" href="mailto:info@suzuki-medical-engineering.work?subject=%E8%BC%B8%E5%85%A5%E6%89%8B%E7%B6%9A%E3%81%AE%E6%94%AF%E6%8F%B4%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">問い合わせる（医療関係者の方）</a>
+</div></section>
+
 <section id="company"><div class="wrap">
   <h2><small>COMPANY</small>会社概要</h2>
   <table>
@@ -118,7 +149,8 @@
     <tr><th>設立</th><td>2026年3月</td></tr>
     <tr><th>所在地</th><td>千葉県松戸市</td></tr>
     <tr><th>法人番号</th><td>5040003029730</td></tr>
-    <tr><th>事業内容</th><td>医療・ヘルスケア分野のシステム・アプリケーションの開発／医療機関の経営・業務改善支援</td></tr>
+    <tr><th>D-U-N-S番号</th><td>699071304</td></tr>
+    <tr><th>事業内容</th><td>医療・ヘルスケア分野のシステム・アプリケーションの開発／医療機関の経営・業務改善支援／医師向け 輸入手続の支援（準備中）</td></tr>
     <tr><th>お問い合わせ</th><td><a href="mailto:info@suzuki-medical-engineering.work">info@suzuki-medical-engineering.work</a></td></tr>
   </table>
 </div></section>
@@ -127,11 +159,16 @@
   <h2><small>ENGLISH</small>About Suzuki Medical Engineering LLC</h2>
   <p>Suzuki Medical Engineering LLC is a Japanese software company founded in March 2026 by Yuya Suzuki, a practicing physician. We design, build, and operate software for medical clinics — electronic medical records, reservations, front-desk check-in, billing, and staff management — shaped by daily use in real clinical settings.</p>
   <p>Our flagship product, <b>FastKarte</b>, is an electronic medical record system for aesthetic clinics. It has been in production use since September 2026, covering reservation import, check-in, charting, consent forms, payments, and online consultations. We build with Anthropic's Claude throughout our development process, which lets a physician-led team ship and maintain clinical-grade software quickly.</p>
+  <h3 style="margin:28px 0 6px;font-size:20px">Import procedure support for physicians in Japan (in preparation)</h3>
+  <p>We are preparing a service that supports Japanese physicians who import pharmaceuticals and medical devices for use in treating their own patients, under the Ministry of Health, Labour and Welfare (MHLW) import confirmation procedure (輸入確認). The physician is the importer of record; we handle communication with overseas manufacturers and exporters, prepare the required documents, and file the application on the physician's behalf under a power of attorney. Goods are shipped directly from the manufacturer or exporter to the medical institution — we do not hold inventory or receive goods. For partnership inquiries from manufacturers and exporters, please contact us by email.</p>
   <table>
     <tr><th>Company</th><td>Suzuki Medical Engineering LLC (合同会社鈴木医工)</td></tr>
-    <tr><th>Founder</th><td>Yuya Suzuki, MD</td></tr>
+    <tr><th>Representative</th><td>Yuya Suzuki, MD (Representative Member / Founder)</td></tr>
+    <tr><th>Corporate Number</th><td>5040003029730 (National Tax Agency, Japan)</td></tr>
+    <tr><th>D-U-N-S Number</th><td>699071304</td></tr>
     <tr><th>Founded</th><td>March 2026</td></tr>
     <tr><th>Location</th><td>Matsudo, Chiba, Japan</td></tr>
+    <tr><th>Business</th><td>Clinical software development and operation; operational consulting for clinics; import procedure support for physicians (in preparation)</td></tr>
     <tr><th>Contact</th><td><a href="mailto:info@suzuki-medical-engineering.work">info@suzuki-medical-engineering.work</a></td></tr>
   </table>
 </div></section>
