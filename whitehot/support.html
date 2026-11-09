@@ -1,0 +1,100 @@
+<!doctype html><html lang="ja"><head><title>WHITE HOT｜赤外線カメラの作戦シミュレーション</title><meta name="description" content="上空の無人機の赤外線カメラで地上を見下ろす、架空の世界の作戦シミュレーションゲーム WHITE HOT のサポートページ。">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="icon" href="../favicon.png" sizes="32x32"><link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --key:#2f3438; --key-dark:#1c1f22; --key-50:#eeeff0; --ink:#1a1a1a; --sub:#4d4d4d; --line:#cccccc; --bg:#f2f2f2; --yellow:#ffd43d; }
+  * { box-sizing:border-box; }
+  body { margin:0; word-break:auto-phrase; font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,sans-serif; color:var(--ink); background:#fff; line-height:1.8; font-size:16px; }
+  a { color:#2b5f85; text-underline-offset:3px; overflow-wrap:anywhere; }
+  a:focus-visible { outline:4px solid #000; outline-offset:2px; box-shadow:0 0 0 2px var(--yellow); border-radius:4px; }
+  .wrap { max-width:800px; margin:0 auto; padding:0 16px; }
+  header { border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:64px; flex-wrap:wrap; }
+  .logo { display:flex; align-items:center; gap:10px; font-weight:700; font-size:18px; color:var(--ink); text-decoration:none; }
+  .logo img { width:34px; height:34px; }
+  nav a { margin-left:16px; font-size:15px; }
+  .hero { background:var(--key); color:#fff; padding:56px 0 48px; }
+  .hero h1 { font-size:clamp(26px,6vw,36px); line-height:1.4; margin:0 0 12px; }
+  .hero p { margin:0; font-size:17px; }
+  .hero .en { color:#fff; opacity:.85; font-size:15px; margin-top:10px; }
+  main section { padding:36px 0; border-bottom:1px solid var(--line); }
+  h1 { font-size:28px; line-height:1.4; margin:0 0 8px; }
+  h2 { font-size:22px; line-height:1.5; margin:0 0 12px; }
+  h3 { font-size:17px; margin:22px 0 4px; }
+  h3 + p { margin-top:0; }
+  ul, ol { padding-left:1.4em; } li { margin:4px 0; }
+  .note { background:var(--bg); border-radius:8px; padding:14px 16px; }
+  .en { color:var(--sub); font-size:15px; }
+  table { border-collapse:collapse; width:100%; }
+  th, td { text-align:left; padding:10px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { width:8em; background:var(--bg); white-space:nowrap; }
+  .btn { display:inline-block; margin-top:8px; background:var(--key); color:#fff; font-weight:700; padding:12px 22px; border-radius:8px; text-decoration:none; }
+  .btn:hover { background:var(--key-dark); color:#fff; }
+  footer { padding:28px 0; font-size:14px; color:var(--sub); }
+  @media (max-width:600px) { nav a { margin-left:0; margin-right:14px; } th { width:auto; font-size:14px; white-space:normal; } }
+</style>
+</head><body><header><div class="wrap"><a class="logo" href="../"><img src="../logo-mark.svg" alt="">合同会社鈴木医工</a><nav><a href="support.html">WHITE HOT</a><a href="privacy.html">プライバシーポリシー</a><a href="#en" lang="en">English</a></nav></div></header>
+<div class="hero"><div class="wrap">
+  <h1>WHITE HOT</h1>
+  <p>上空の無人機の赤外線カメラで地上を見下ろす、架空の世界の作戦シミュレーションゲームです。</p>
+  <p class="en" lang="en">A tactical simulation game set in an entirely fictional world, played through a thermal camera.</p>
+</div></div>
+<main class="wrap">
+<section>
+  <h2>遊び方</h2>
+  <p>最初に「OP 00 訓練」を遊ぶと、30秒ほどで操作を覚えられます。</p>
+  <ul>
+    <li><b>照準</b>：ドラッグで動かします。</li>
+    <li><b>ズーム</b>：ピンチか ＋− ボタン。寄ると「攻撃目標」と「攻撃禁止」の識別枠が出ます。</li>
+    <li><b>追尾と発射</b>：LOCK で追尾し、FIRE で発射します。動く目標は LOCK してから撃ってください。</li>
+  </ul>
+  <p class="note">舞台・勢力・地名・兵器はすべて架空です。人は登場しません（目標は車両・建物・設備のみ）。</p>
+</section>
+<section>
+  <h2>よくある質問</h2>
+  <h3>音が出ない</h3>
+  <p>メニューの「効果音」がオンか、端末の消音スイッチと音量を確かめてください。無線の声だけを切ることもできます。</p>
+  <h3>画面が 2 つに分かれた</h3>
+  <p>iPad や、折りたたみの iPhone を開いたときは、カメラと操作卓（地図・目標リスト・2台目のカメラ・無線の記録）の 2 画面になります。</p>
+  <h3>ランキングはどこで見られますか</h3>
+  <p>Game Center にサインインしていると、メニューに「ランキング」が出ます。サインインしなくても遊べます。</p>
+  <h3>追加の料金はかかりますか</h3>
+  <p>いいえ。買い切りで、広告もアプリ内課金もありません。</p>
+  <h3>情報は送られますか</h3>
+  <p>当社は利用者の情報を集めません（<a href="privacy.html">プライバシーポリシー</a>）。</p>
+</section>
+<section>
+  <h2>動作環境</h2>
+  <p>iOS 18 以降の iPhone・iPad。</p>
+</section>
+<section>
+  <h2>お問い合わせ</h2>
+  <p>不具合のご報告・ご要望は、メールでお知らせください。お使いの機種と iOS のバージョン、起きたことを書いていただけると助かります。</p>
+  <a class="btn" href="mailto:info@suzuki-medical-engineering.work?subject=WHITE%20HOT">メールで問い合わせる</a>
+  <table style="margin-top:20px">
+    <tr><th>事業者</th><td>合同会社鈴木医工（Suzuki Medical Engineering LLC）</td></tr>
+    <tr><th>所在地</th><td>千葉県松戸市小金359-1</td></tr>
+  </table>
+</section>
+
+<section id="en" lang="en">
+  <h1>WHITE HOT Support (English)</h1>
+  <p>WHITE HOT: Missile Simulator is a tactical simulation game set in an entirely fictional world. All places, groups and weapons are fictional, and no people appear.</p>
+  <h2>How to play</h2>
+  <p>Start with “OP 00 Training”, which teaches the controls in about 30 seconds. Drag to aim, pinch or use +/− to zoom, press LOCK to track and FIRE to launch. Zoom in to see which objects are targets and which are off-limits.</p>
+  <h2>FAQ</h2>
+  <p><b>There is no sound.</b> Check that Sound is on in the menu, and check the silent switch and volume. You can turn off only the radio voice.</p>
+  <p><b>The screen split in two.</b> On iPad or an unfolded iPhone, the game shows the camera and a console (map, target list, second camera and radio log).</p>
+  <p><b>Where are the leaderboards?</b> When you are signed in to Game Center, a Leaderboards button appears in the menu. You can play without signing in.</p>
+  <p><b>Are there extra charges?</b> No. It is a one-time purchase with no ads and no in-app purchases.</p>
+  <p><b>Is my information sent anywhere?</b> We do not collect your information (<a href="privacy.html#en">Privacy Policy</a>).</p>
+  <h2>Requirements</h2>
+  <p>iPhone or iPad with iOS 18 or later.</p>
+  <h2>Contact</h2>
+  <p><a href="mailto:info@suzuki-medical-engineering.work?subject=WHITE%20HOT">info@suzuki-medical-engineering.work</a> — please include your device model, iOS version and what happened.</p>
+</section>
+</main>
+<footer><div class="wrap">© 2026 合同会社鈴木医工（Suzuki Medical Engineering LLC）｜お問い合わせ：<a href="mailto:info@suzuki-medical-engineering.work">info@suzuki-medical-engineering.work</a></div></footer></body></html>
