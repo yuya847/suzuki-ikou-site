@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ヘルスケア企業のISMS（ISO/IEC 27001）認証取得の支援｜合同会社鈴木医工</title>
+<meta name="description" content="医療の情報を扱う会社の、ISMS（ISO/IEC 27001）認証取得と取得後の運用を支援します。医師で、電子カルテを自社で開発・運用している合同会社鈴木医工が、計画・リスクアセスメント・文書・教育・内部監査・審査の準備まで進めます。3省2ガイドラインの対応もあわせて。">
+<link rel="canonical" href="https://suzuki-medical-engineering.work/isms/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../favicon.png" sizes="32x32">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:type" content="website"><meta property="og:url" content="https://suzuki-medical-engineering.work/isms/"><meta property="og:title" content="ヘルスケア企業のISMS認証取得の支援｜合同会社鈴木医工"><meta property="og:description" content="医療の情報を扱う会社の、ISMS（ISO/IEC 27001）認証取得と運用を支援します。3省2ガイドラインの対応もあわせて。"><meta property="og:site_name" content="合同会社鈴木医工"><meta property="og:locale" content="ja_JP">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root { --key:#3F6F8F; --key-dark:#2F5670; --key-50:#EAF1F5; --ink:#1a1a1a; --sub:#4d4d4d; --line:#cccccc; --bg:#f2f2f2; --yellow:#ffd43d; --red:#8a2a1a; }
+  * { box-sizing:border-box; }
+  body { margin:0; word-break:auto-phrase; font-family:"Noto Sans JP",-apple-system,BlinkMacSystemFont,sans-serif; color:var(--ink); background:#fff; line-height:1.7; font-size:16px; }
+  a { color:var(--key); text-underline-offset:3px; }
+  a:hover { color:var(--key-dark); text-decoration-thickness:3px; }
+  a:focus-visible { outline:4px solid #000; outline-offset:2px; box-shadow:0 0 0 2px var(--yellow); border-radius:4px; }
+  .wrap { max-width:1040px; margin:0 auto; padding:0 16px; }
+  .nw { display:inline-block; }
+  header { border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:64px; flex-wrap:wrap; }
+  .logo { display:flex; align-items:center; gap:10px; font-weight:700; font-size:18px; color:var(--ink); text-decoration:none; }
+  .logo img { width:34px; height:34px; }
+  nav a { margin-left:16px; font-size:15px; }
+  .hero { background:var(--key); color:#fff; padding:64px 0 56px; }
+  .hero .kicker { display:inline-block; font-size:14px; font-weight:700; background:#fff; color:var(--key-dark); border-radius:6px; padding:2px 10px; margin:0 0 14px; }
+  .hero h1 { font-size:clamp(24px,5.4vw,38px); line-height:1.45; margin:0 0 16px; }
+  .hero p { max-width:760px; margin:0; font-size:17px; }
+  .hero .btn { background:#fff; color:var(--key-dark); }
+  .hero .btn:hover { background:var(--key-50); color:var(--key-dark); }
+  section { padding:56px 0; border-bottom:1px solid var(--line); }
+  h2 { font-size:26px; line-height:1.5; margin:0 0 8px; }
+  h2 small { display:block; font-size:14px; color:var(--sub); font-weight:400; letter-spacing:.08em; }
+  .intro { color:var(--sub); margin:0 0 8px; max-width:46em; }
+  .who { list-style:none; padding:0; margin:20px 0 0; display:grid; gap:10px; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); }
+  .who li { background:var(--bg); border-radius:8px; padding:14px 16px 14px 44px; position:relative; }
+  .who li::before { content:"✓"; position:absolute; left:16px; top:14px; color:var(--key); font-weight:700; }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); margin-top:24px; }
+  .card { border:1px solid var(--line); border-radius:8px; padding:20px; background:#fff; }
+  .card .no { font-size:13px; font-weight:700; color:var(--key); letter-spacing:.08em; }
+  .card h3 { margin:4px 0 6px; font-size:19px; line-height:1.5; }
+  .card p { margin:0; color:var(--sub); }
+  .tbl-wrap { overflow-x:auto; margin-top:24px; }
+  table { border-collapse:collapse; width:100%; min-width:560px; }
+  th, td { text-align:left; padding:12px; border-bottom:1px solid var(--line); vertical-align:top; font-size:15px; }
+  thead th { background:var(--key-50); color:var(--key-dark); font-size:14px; }
+  tbody th { width:9em; background:var(--bg); font-weight:700; }
+  .steps { counter-reset:st; list-style:none; padding:0; margin:24px 0 0; display:grid; gap:12px; }
+  .steps li { counter-increment:st; position:relative; padding:14px 16px 14px 56px; background:var(--bg); border-radius:8px; }
+  .steps li::before { content:counter(st); position:absolute; left:16px; top:14px; width:28px; height:28px; border-radius:50%; background:var(--key); color:#fff; font-weight:700; display:grid; place-items:center; font-size:14px; }
+  .steps b { display:block; }
+  .steps .term { display:inline-block; font-size:13px; font-weight:700; color:var(--key-dark); background:#fff; border:1px solid var(--key); border-radius:99px; padding:0 10px; margin-left:8px; vertical-align:2px; }
+  .steps span { color:var(--sub); font-size:15px; }
+  .docs { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); margin-top:24px; }
+  .docs div { border-left:4px solid var(--key); background:var(--bg); padding:14px 16px; border-radius:0 8px 8px 0; }
+  .docs b { display:block; margin-bottom:4px; }
+  .docs ul { margin:0; padding-left:1.1em; color:var(--sub); font-size:15px; }
+  .price { margin-top:24px; border:1px solid var(--line); border-radius:8px; padding:20px; }
+  .price p { margin:0 0 6px; }
+  .rule { margin-top:20px; border:1.5px solid var(--red); border-radius:8px; padding:16px 20px; }
+  .rule b { color:var(--red); }
+  .rule ul { margin:8px 0 0; padding-left:1.2em; color:var(--sub); font-size:15px; }
+  .faq details { border-bottom:1px solid var(--line); }
+  .faq details:first-of-type { border-top:1px solid var(--line); margin-top:20px; }
+  .faq summary { font-weight:700; cursor:pointer; list-style:none; padding:16px 36px 16px 0; position:relative; }
+  .faq summary::-webkit-details-marker { display:none; }
+  .faq summary::after { content:"＋"; position:absolute; right:4px; top:16px; color:var(--key); font-weight:700; }
+  .faq details[open] summary::after { content:"−"; }
+  .faq p { margin:0 0 16px; color:var(--sub); }
+  .btn { display:inline-block; margin-top:18px; background:var(--key); color:#fff; font-weight:700; padding:12px 22px; border-radius:8px; text-decoration:none; transition:transform .08s,opacity .15s; }
+  .btn:hover { background:var(--key-dark); color:#fff; }
+  .btn:active { transform:scale(.98); opacity:.85; }
+  .contact { background:var(--bg); border-bottom:0; }
+  footer { padding:28px 0; font-size:14px; color:var(--sub); border-top:1px solid var(--line); }
+  @media (max-width:600px) { nav a { margin-left:0; margin-right:14px; } .hero { padding:44px 0; } h2 { font-size:22px; } .hero p { font-size:16px; } th, td { padding:10px; font-size:14px; } .tbl-wrap { overflow:visible; } table { min-width:0; } thead { display:none; } tbody tr { display:block; border:1px solid var(--line); border-radius:8px; margin-bottom:10px; overflow:hidden; } tbody th { display:block; width:auto; } tbody td { display:block; border-bottom:0; padding:8px 12px; } tbody td + td { border-top:1px dashed var(--line); } tbody td::before { content:attr(data-label); display:block; font-size:12px; font-weight:700; color:var(--key-dark); } }
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"ヘルスケア企業のISMS（ISO/IEC 27001）認証取得の支援","serviceType":"情報セキュリティマネジメントシステムの認証取得・運用の支援","provider":{"@type":"Organization","name":"合同会社鈴木医工","url":"https://suzuki-medical-engineering.work/"},"areaServed":"JP","audience":{"@type":"BusinessAudience","name":"医療・ヘルスケアの情報を扱う会社（おおむね50名まで）"},"url":"https://suzuki-medical-engineering.work/isms/","description":"医療の情報を扱う会社の、ISMS（ISO/IEC 27001）の新規の認証取得と取得後の運用を支援する。計画、リスクアセスメント、文書、社員教育、内部監査、審査機関の選定と審査の準備まで。3省2ガイドラインの対応もあわせて支援する。費用は個別の見積もりで、審査機関の審査費用は別。"}</script>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="../"><img src="../logo-mark.svg" alt="">合同会社鈴木医工</a>
+  <nav><a href="#about">特徴</a><a href="#scope">支援の範囲</a><a href="#flow">進め方</a><a href="#price">費用</a><a href="#contact">ご相談</a></nav>
+</div></header>
+
+<div class="hero"><div class="wrap">
+  <span class="kicker">ご相談受付中</span>
+  <h1>医療の情報を扱う会社の、<br>ISMS認証取得を支援します。</h1>
+  <p>医療機関や製薬企業と取引するために、情報セキュリティの体制を第三者の認証で示したい。そんな医療・ヘルスケアの会社に向けて、ISMS（ISO/IEC 27001）の新規の認証取得と、取得後の運用を支援します。医師で、医療機関向けの電子カルテを自社で開発・運用している鈴木医工が、診療の現場とシステムの両方を見ながら進めます。</p>
+  <a class="btn" href="#contact">相談する（無料）</a>
+</div></div>
+
+<section id="who"><div class="wrap">
+  <h2><small>FOR</small>こんな会社に</h2>
+  <ul class="who">
+    <li>医療機関向けのクラウドサービス・SaaSを提供している</li>
+    <li>オンライン診療、PHR、医療機器のソフトウェアなどを開発している</li>
+    <li>医療機関や製薬企業から、ISMSの認証を求められている</li>
+    <li>セキュリティの専任者がおらず、何から始めればよいかわからない</li>
+  </ul>
+  <p class="intro" style="margin-top:16px">社員数がおおむね50名までの組織を想定しています。それより大きい組織も、ご相談ください。</p>
+</div></section>
+
+<section id="about"><div class="wrap">
+  <h2><small>FEATURES</small>鈴木医工の特徴</h2>
+  <div class="grid">
+    <div class="card"><span class="no">01</span><h3>医療の情報の流れを、<span class="nw">現場から洗い出します</span></h3><p>代表は医師です。患者の情報が、予約・受付・診察・会計・外部のサービスのどこを通るのかを、診療の流れに沿って一緒に洗い出し、守るべきところを決めます。</p></div>
+    <div class="card"><span class="no">02</span><h3>書類だけでなく、<span class="nw">システムの対策まで</span></h3><p>医療機関向けの電子カルテを自社で開発し、運用しています。規程づくりに加えて、二要素認証、権限の設計、操作の記録（監査ログ）など、システム側の対策も一緒に考えます。</p></div>
+    <div class="card"><span class="no">03</span><h3><span class="nw">3省2ガイドライン</span>と、<span class="nw">まとめて整えます</span></h3><p>医療機関に提供するサービスでは、厚生労働省、総務省・経済産業省のガイドライン（いわゆる3省2ガイドライン）への対応も求められます。ISMSの文書と重ならないように、あわせて整えます。</p></div>
+  </div>
+</div></section>
+
+<section id="scope"><div class="wrap">
+  <h2><small>SCOPE</small>支援の範囲と、<span class="nw">御社にお願いすること</span></h2>
+  <p class="intro">文書のひな形づくりと進行の管理は、鈴木医工が受け持ちます。御社には、決めることと確かめることに集中していただきます。</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th scope="col">工程</th><th scope="col">鈴木医工がすること</th><th scope="col">御社にお願いすること</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">計画</th><td data-label="鈴木医工がすること">適用範囲・体制・スケジュールの設計、年間計画づくり</td><td data-label="御社にお願いすること">経営層の合意、責任者・担当者を決める</td></tr>
+      <tr><th scope="row">リスクアセスメント</th><td data-label="鈴木医工がすること">情報資産の洗い出し、リスクの評価、対応の方針の整理</td><td data-label="御社にお願いすること">サービス・資産・委託先の情報のご提供</td></tr>
+      <tr><th scope="row">文書</th><td data-label="鈴木医工がすること">方針・規程・台帳・適用宣言書などのひな形を用意し、御社の実態に合わせて作る</td><td data-label="御社にお願いすること">内容の確認と承認</td></tr>
+      <tr><th scope="row">対策</th><td data-label="鈴木医工がすること">技術的・運用的な対策の優先順位づけと、実施の支援</td><td data-label="御社にお願いすること">対策の実施</td></tr>
+      <tr><th scope="row">社員教育</th><td data-label="鈴木医工がすること">役割ごと・全社員向けの教材づくりと、受講の管理</td><td data-label="御社にお願いすること">受講</td></tr>
+      <tr><th scope="row">内部監査</th><td data-label="鈴木医工がすること">監査の計画づくりと実施の支援、是正の整理、マネジメントレビューの準備</td><td data-label="御社にお願いすること">結果の承認と、是正の実施</td></tr>
+      <tr><th scope="row">審査</th><td data-label="鈴木医工がすること">審査機関の相見積もりと選定の支援、審査に向けた準備</td><td data-label="御社にお願いすること">審査機関の決定と契約</td></tr>
+    </tbody>
+  </table></div>
+</div></section>
+
+<section id="flow"><div class="wrap">
+  <h2><small>FLOW</small>進め方（目安は約6か月）</h2>
+  <ol class="steps">
+    <li><b>計画<span class="term">約2週間</span></b><span>認証を取る目的と適用範囲、体制、スケジュールを決めます。審査機関の比較も始めます。</span></li>
+    <li><b>リスクアセスメント<span class="term">約1か月</span></b><span>情報資産を洗い出し、リスクを評価して、対応の方針を決めます。</span></li>
+    <li><b>文書と対策<span class="term">約3〜4か月</span></b><span>方針・規程・適用宣言書・インシデントの報告の流れなどを整え、対策を進めます。社員教育も並行して行います。</span></li>
+    <li><b>内部監査とマネジメントレビュー<span class="term">約2週間</span></b><span>決めたとおりに運用できているかを確かめ、足りないところを直します。</span></li>
+    <li><b>審査<span class="term">約1か月</span></b><span>審査機関による第1段階・第2段階の審査を受けます。</span></li>
+  </ol>
+  <p class="intro" style="margin-top:16px">期間は、組織の規模や、すでにある規程・対策によって前後します。2年目以降は、リスクアセスメントの見直し、内部監査、教育を続け、維持審査・更新審査に向けた運用を支援します。</p>
+</div></section>
+
+<section id="docs"><div class="wrap">
+  <h2><small>DOCUMENTS</small>主に整える文書</h2>
+  <div class="docs">
+    <div><b>方針と体制</b><ul><li>情報セキュリティ方針・目的</li><li>体制図と役割・責任</li><li>適用範囲、適用宣言書</li></ul></div>
+    <div><b>リスクと運用のルール</b><ul><li>リスクアセスメントの手順と台帳</li><li>情報セキュリティの規程（社内ルール）</li><li>インシデントの報告の流れ</li><li>関係する法令の一覧</li></ul></div>
+    <div><b>委託先と事業の継続</b><ul><li>委託先の一覧と確認表</li><li>事業継続の計画</li></ul></div>
+    <div><b>教育・監査・改善</b><ul><li>社員向けの教材</li><li>内部監査の計画・チェックリスト・結果</li><li>是正の記録、マネジメントレビューの記録</li></ul></div>
+  </div>
+</div></section>
+
+<section id="price"><div class="wrap">
+  <h2><small>PRICE</small>費用</h2>
+  <div class="price">
+    <p><b>新規の認証取得の支援・2年目以降の運用の支援・3省2ガイドラインの対応</b></p>
+    <p>組織の規模と、いまの整い具合をうかがって、お見積もりします。</p>
+    <p style="color:var(--sub);font-size:15px;margin:0">審査機関に支払う審査費用は、別にかかります。相見積もりを取ってご案内します。</p>
+  </div>
+  <div class="rule"><b>ご承知おきいただきたいこと</b>
+    <ul>
+      <li>認証を出すのは第三者の審査機関で、鈴木医工ではありません。認証の取得をお約束するものではありません。</li>
+      <li>決めること・承認すること・対策を実施することは、御社に行っていただきます。</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="faq" class="faq"><div class="wrap">
+  <h2><small>Q&amp;A</small>よくある質問</h2>
+  <details open><summary>セキュリティの専任者がいなくても進められますか？</summary><p>進められます。文書のひな形づくりと進行の管理は鈴木医工が受け持ちます。御社には、責任者と担当者を決めていただき、内容の確認と判断をお願いします。</p></details>
+  <details><summary>すでにある規程や対策は使えますか？</summary><p>使えます。いまの文書と取り組みを確かめて、使えるところは生かし、足りないところを補います。</p></details>
+  <details><summary>審査機関の費用は含まれますか？</summary><p>含まれません。審査費用は審査機関に直接お支払いいただきます。複数の機関から見積もりを取り、選ぶのをお手伝いします。</p></details>
+  <details><summary>3省2ガイドラインの対応も頼めますか？</summary><p>頼めます。ISMSの文書と重ならないように、あわせて整えます。医療機関への説明に使う資料づくりもご相談ください。</p></details>
+  <details><summary>医療機関（クリニック）でも頼めますか？</summary><p>ISMSの認証は主に会社向けですが、医療機関の情報セキュリティの見直し（厚生労働省のガイドラインとチェックリストに沿った点検）もご相談ください。</p></details>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <h2><small>CONTACT</small>ご相談</h2>
+  <p class="intro">まずは、認証を取りたい理由と時期、組織の人数をお知らせください。代表の鈴木から、メールでご返信します。</p>
+  <a class="btn" href="mailto:info@suzuki-medical-engineering.work?subject=%E3%80%90ISMS%E8%AA%8D%E8%A8%BC%E5%8F%96%E5%BE%97%E3%81%AE%E6%94%AF%E6%8F%B4%E3%80%91%E3%81%94%E7%9B%B8%E8%AB%87">メールで相談する</a>
+  <p style="margin:14px 0 0;color:var(--sub);font-size:14px">info@suzuki-medical-engineering.work</p>
+</div></section>
+
+<footer><div class="wrap"><a href="../">合同会社鈴木医工</a>　© 2026 合同会社鈴木医工 / Suzuki Medical Engineering LLC<br>ISO/IEC 27001 は国際標準化機構（ISO）と国際電気標準会議（IEC）の規格です。本ページの内容は、特定の審査機関・認定機関との提携を示すものではありません。</div></footer>
+</body>
+</html>
