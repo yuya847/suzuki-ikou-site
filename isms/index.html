@@ -59,8 +59,13 @@
   .docs div { border-left:4px solid var(--key); background:var(--bg); padding:14px 16px; border-radius:0 8px 8px 0; }
   .docs b { display:block; margin-bottom:4px; }
   .docs ul { margin:0; padding-left:1.1em; color:var(--sub); font-size:15px; }
-  .price { margin-top:24px; border:1px solid var(--line); border-radius:8px; padding:20px; }
+  .plans { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); margin-top:24px; }
+  .price { border:1px solid var(--line); border-radius:8px; padding:20px; }
   .price p { margin:0 0 6px; }
+  .pname { font-weight:700; }
+  .pval { font-size:30px; font-weight:700; color:var(--key-dark); line-height:1.3; }
+  .pval small { font-size:14px; color:var(--sub); font-weight:400; }
+  .pnote { color:var(--sub); font-size:15px; margin:0 !important; }
   .rule { margin-top:20px; border:1.5px solid var(--red); border-radius:8px; padding:16px 20px; }
   .rule b { color:var(--red); }
   .rule ul { margin:8px 0 0; padding-left:1.2em; color:var(--sub); font-size:15px; }
@@ -78,7 +83,7 @@
   footer { padding:28px 0; font-size:14px; color:var(--sub); border-top:1px solid var(--line); }
   @media (max-width:600px) { nav a { margin-left:0; margin-right:14px; } .hero { padding:44px 0; } h2 { font-size:22px; } .hero p { font-size:16px; } th, td { padding:10px; font-size:14px; } .tbl-wrap { overflow:visible; } table { min-width:0; } thead { display:none; } tbody tr { display:block; border:1px solid var(--line); border-radius:8px; margin-bottom:10px; overflow:hidden; } tbody th { display:block; width:auto; } tbody td { display:block; border-bottom:0; padding:8px 12px; } tbody td + td { border-top:1px dashed var(--line); } tbody td::before { content:attr(data-label); display:block; font-size:12px; font-weight:700; color:var(--key-dark); } }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"ヘルスケア企業のISMS（ISO/IEC 27001）認証取得の支援","serviceType":"情報セキュリティマネジメントシステムの認証取得・運用の支援","provider":{"@type":"Organization","name":"合同会社鈴木医工","url":"https://suzuki-medical-engineering.work/"},"areaServed":"JP","audience":{"@type":"BusinessAudience","name":"医療・ヘルスケアの情報を扱う会社（おおむね50名まで）"},"url":"https://suzuki-medical-engineering.work/isms/","description":"医療の情報を扱う会社の、ISMS（ISO/IEC 27001）の新規の認証取得と取得後の運用を支援する。計画、リスクアセスメント、文書、社員教育、内部監査、審査機関の選定と審査の準備まで。3省2ガイドラインの対応もあわせて支援する。費用は個別の見積もりで、審査機関の審査費用は別。"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"ヘルスケア企業のISMS（ISO/IEC 27001）認証取得の支援","serviceType":"情報セキュリティマネジメントシステムの認証取得・運用の支援","provider":{"@type":"Organization","name":"合同会社鈴木医工","url":"https://suzuki-medical-engineering.work/"},"areaServed":"JP","audience":{"@type":"BusinessAudience","name":"医療・ヘルスケアの情報を扱う会社（おおむね50名まで）"},"url":"https://suzuki-medical-engineering.work/isms/","description":"医療の情報を扱う会社の、ISMS（ISO/IEC 27001）の新規の認証取得と取得後の運用を支援する。計画、リスクアセスメント、文書、社員教育、内部監査、審査機関の選定と審査の準備まで。3省2ガイドラインの対応もあわせて支援する。費用は新規の認証取得の支援が60万〜80万円（税抜）、2年目以降の運用の支援が年40万〜50万円（税抜）、3省2ガイドラインの対応は見積もり。審査機関の審査費用は別。"}</script>
 </head>
 <body>
 <header><div class="wrap">
@@ -154,11 +159,12 @@
 
 <section id="price"><div class="wrap">
   <h2><small>PRICE</small>費用</h2>
-  <div class="price">
-    <p><b>新規の認証取得の支援・2年目以降の運用の支援・3省2ガイドラインの対応</b></p>
-    <p>組織の規模と、いまの整い具合をうかがって、お見積もりします。</p>
-    <p style="color:var(--sub);font-size:15px;margin:0">審査機関に支払う審査費用は、別にかかります。相見積もりを取ってご案内します。</p>
+  <div class="plans">
+    <div class="price"><p class="pname">新規の認証取得の支援</p><p class="pval">60万〜80万円<small>（税抜）</small></p><p class="pnote">計画から審査の準備まで。約6か月。</p></div>
+    <div class="price"><p class="pname">2年目以降の運用の支援</p><p class="pval">40万〜50万円<small>／年（税抜）</small></p><p class="pnote">リスクアセスメントの見直し、内部監査、教育、維持審査・更新審査の準備。</p></div>
+    <div class="price"><p class="pname">3省2ガイドラインの対応</p><p class="pval">お見積もり</p><p class="pnote">ISMSの文書とあわせて整えます。</p></div>
   </div>
+  <p style="color:var(--sub);font-size:15px;margin:14px 0 0">金額の幅は、組織の人数（おおむね50名まで）と、いまの整い具合で決まります。審査機関に支払う審査費用は、別にかかります。相見積もりを取ってご案内します。</p>
   <div class="rule"><b>ご承知おきいただきたいこと</b>
     <ul>
       <li>認証を出すのは第三者の審査機関で、鈴木医工ではありません。認証の取得をお約束するものではありません。</li>
